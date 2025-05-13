@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Yi Enable Copy",
+    "version": "1.2.1",
+    "description": "Click to enable copy.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      },
+      "default_title": "Yi Enable Copy (Click to Activate)"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "images/icon16-active.png",
+          "images/icon48-active.png",
+          "images/icon128-active.png",
+          "images/overlay-icon.png"
+        ],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
